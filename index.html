@@ -1,0 +1,30 @@
+<html>
+
+<body>
+	<h1>Chat Via Signaling server Example</h1>
+    <div>
+        <input type="text" id="accessToken-input" placeholder="Access Token" value="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJpZDExMTExMTExMSIsImlhdCI6MTY0OTU4MDI2MywiZXhwIjoxNjUyMTcyMjYzfQ.OEWzMrGRLvbYuvlAz2_GaukYio0zLm36vuVqt-ztgEo"></input>
+        <button id="auth-button" onclick="onAuth()">Login</button>
+    </div>
+    <div>
+        <label title="UserId">UserId</label>
+        <span id="userId"></span>
+    </div>
+    <div>
+        <input type="text" id="userId-input" placeholder="UserId" value="user1"></input>
+        <button id="start-button" onclick="onCreateConversation()" disabled=true>Start chat</button>
+    </div>
+    <input type="hidden" id="conversationId"/>
+    <div>
+        <textarea id="messageBox" style="width: 640px; height: 480px;" disabled="true"></textarea>
+    </div>
+    <div>
+        <textarea id="message-input" placeholder="Message here"></textarea>
+        <button id="send-button" onclick="onSendMessage()" disabled="true">Send</button>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+	<script src="/src/utils.js"></script>
+	<script src="/src/index.js"></script>
+</body>
+
+</html>
