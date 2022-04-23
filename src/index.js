@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8088');
+const socket = io('https://localhost:8088');
 const accessTokenInput = document.querySelector('#accessToken-input');
 const userIdLabel = document.querySelector("#userId");
 const userIdInput = document.querySelector("#userId-input");
